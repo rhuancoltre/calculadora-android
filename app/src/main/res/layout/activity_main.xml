@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Numero 1 " />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Numero 2 ( ou % )" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btSomar"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.53"
+                android:text="SOMAR"
+                android:textColor="#0000FF" />
+
+            <Button
+                android:id="@+id/btSubtrair"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.39"
+                android:text="SUBTRAIR"
+                android:textColor="#0000FF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/btMultiplicar"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:text="MULTIPLICAR"
+                android:textColor="#0000FF"
+                android:layout_weight="0.52" />
+
+            <Button
+                android:id="@+id/btDividir"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:text="DIVIDIR"
+                android:textColor="#0000FF"
+                android:layout_weight="0.35" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btPorcent"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:text="PORCENT"
+                android:textColor="#0000FF" />
+
+            <Button
+                android:id="@+id/btLimpar"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.38"
+                android:onClick="limpar"
+                android:text="LIMPAR"
+                android:textColor="#0000FF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+</LinearLayout>
